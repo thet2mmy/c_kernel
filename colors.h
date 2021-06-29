@@ -37,8 +37,8 @@ enum vga_color {
     COLOR_WHITE = HI_WHITE_TXT,
 };
 
-int make_color(enum vga_color fg, enum vga_color bg) {
-    return fg | bg << 4;
+int make_color(int fg, int bg) {
+    return bg | fg << 4;
 }
 
 
